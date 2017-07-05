@@ -21,5 +21,13 @@ console.log(routeStations.length)
         this._currentStation = routeStations[nextStationIndex]
 
         return 'Now arriving at: ' + this._currentStation.getName()
+    }, reset: function () {
+        this._currentStation = this._route.getStations()[0]
     }
 }
+
+$('#reset').click(function () {
+  tram.reset()
+  updateDOM()
+})
+

@@ -10,5 +10,8 @@ Route.prototype = {
     },
     getStations: function () {
         return this._stations
+    },
+    getStartingStation: function () {
+        return _stations[0]
     }
 }
